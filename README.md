@@ -32,3 +32,22 @@ http://www.cb.uu.se/~johan/vtk/installing_vtk_on_mac.txt
 
 
 # ERROR 1: ImportError: No module named vtk
+
+
+
+# ERROR 2:  > import vtk
+Traceback (most recent call last):
+  File "/Users/jimmy/Dropbox/VTK/VTK-7.1.1/Wrapping/Python/vtk/vtkCommonCore.py", line 5, in <module>
+    from .vtkCommonCorePython import *
+ImportError: No module named 'vtk.vtkCommonCorePython'
+
+
+Solution:  
+
+$ /home/vtk/bin/vtkpython
+vtk version 6.2.0
+Python 2.7.5 (default, Mar  9 2014, 22:15:05) 
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import vtkCommonCorePython 
+>>> print vtkCommonCorePython
+<module 'vtkCommonCorePython' from '/home/vtk/lib/vtkCommonCorePython.so'>
