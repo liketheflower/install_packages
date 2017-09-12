@@ -38,6 +38,8 @@ http://www.cb.uu.se/~johan/vtk/installing_vtk_on_mac.txt
 # ERROR 2:  > import vtk
 Traceback (most recent call last):
   File "/Users/jimmy/Dropbox/VTK/VTK-7.1.1/Wrapping/Python/vtk/vtkCommonCore.py", line 5, in <module>
+  
+  
     from .vtkCommonCorePython import *
 ImportError: No module named 'vtk.vtkCommonCorePython'
 
@@ -51,3 +53,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import vtkCommonCorePython 
 >>> print vtkCommonCorePython
 <module 'vtkCommonCorePython' from '/home/vtk/lib/vtkCommonCorePython.so'>
+
+
+# error 3:  
+
+>>> import vtk
+Fatal Python error: PyThreadState_Get: no current thread
+Abort trap: 6
+
