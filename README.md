@@ -61,3 +61,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Fatal Python error: PyThreadState_Get: no current thread
 Abort trap: 6
 
+
+solution:
+remove the "/Users/jimmy/Dropbox/VTK/VTK-7.1.1/lib" from the environment varialbe PYTHONPATH
+then the problem is fixed, however, the error 2 will appear instead.
